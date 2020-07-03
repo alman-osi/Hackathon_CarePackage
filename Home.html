@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html> 
     <head>
+		<meta charset="UTF-8"> 
         <style>
             	/* Style the top navigation bar */ 
 			.topnav {overflow:hidden; background-color:#333;} 
@@ -19,11 +20,30 @@
         <title>CarePackage_Hackathon: Project</title>
     </head>
     <body>
+		<div>
+			<h1>Hackathon Care</h1>
+		</div>
         <div class="topnav"> 
-			<a href="NAME.html">TOPIC</a> 
+			<a href="NAME.html">About</a> 
 			<a href="NAME.html">Give/Recieve</a>
-			<a href="NAME.html" style="float:right">About</a> 
-        </div>
+			<a href="NAME.html" style="float:right">Sign-in</a> 
+		</div>
+		<div id="login">
+			<h2>Login Form</h2>
+				<form action="" method="post">
+					<label>UserName :</label>
+					<input id="name" name="username" placeholder="username" type="text">
+					<br>
+					<label>Password :</label>
+					<input id="password" name="password" placeholder="**********" type="password">
+					<br><br>
+					<input name="submit" type="submit" value=" Login ">
+						<span><?php echo $error; ?></span>
+				</form>
+			<br>
+			<a href="NAME.html">Click Here to Register</a>
+		</div>
+
         <footer>
             
         </footer> 
